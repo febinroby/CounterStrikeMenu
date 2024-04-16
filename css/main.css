@@ -10,9 +10,26 @@
 }
 
 body{
-    background-image: url('/assets/index-bg.jpg');
+    background-image: url('../assets/index-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "csgo";
     overflow: hidden;
+}
+
+.body-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn{
+    width: 7%;
+    height: 7%;
+}
+
+.start-btn:hover{
+    cursor: pointer;
 }
