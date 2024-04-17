@@ -28,6 +28,28 @@ class Weapon {
         this.team = team;
         this.description = description;
     }
+
+    setPrice() {
+        if(this.category === "Pistols") {
+            let randomPrice = Math.round((Math.random() * (700 - 200) + 200) / 50) * 50;
+            this.price = randomPrice;
+        } else if(this.category === "SMGs") {
+            let randomPrice = Math.round((Math.random() * (1500 - 1000) + 1000) / 50) * 50;
+            this.price = randomPrice;
+        } else if(this.category === "Rifles") {
+            let randomPrice = Math.round((Math.random() * (3500 - 1500) + 1500) / 50) * 50;
+            this.price = randomPrice;
+        } else if(this.category === "Heavy") {
+            let randomPrice = Math.round((Math.random() * (4500 - 2500) + 2500) / 50) * 50;
+            this.price = randomPrice;
+        } else if(this.category === "Knives") {
+            let randomPrice = Math.round((Math.random() * (500 - 100) + 100) / 50) * 50;
+            this.price = randomPrice;
+        } else if(this.category === "Gloves") {
+            let randomPrice = Math.round((Math.random() * (500 - 100) + 100) / 50) * 50;
+            this.price = randomPrice;
+        }
+    }
 }
 
 // Fetching Data from the API
@@ -51,6 +73,7 @@ function getData(url) {
                     continue;
                 } else {
                     const newWeapon = new Weapon(apiResponse[i].id, apiResponse[i].weapon.name, apiResponse[i].image, apiResponse[i].pattern.name, apiResponse[i].category.name, apiResponse[i].team.id, apiResponse[i].description);
+                    newWeapon.setPrice();
                     weapons.push(newWeapon);
                 }
             }
