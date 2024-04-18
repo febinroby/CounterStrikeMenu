@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: url('../assets/index-bg.jpg');
+    background-image: url('../assets/cs-bg-with-title-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -62,24 +62,88 @@ body{
     margin: 2%;
     height: 100%;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, .5);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+.counter-terrorist-opt:hover{
+    cursor: pointer;
+}
+
+.counter-terrorist-opt img{
+    width: 50%;
+    height: 50%;
+    object-fit: scale-down;
+}
+
+.counter-terrorist-opt p{
+    margin: 3%;
+    font-family: "csgo";
+    font-size: 120%;
+    color: white;
 }
 
 .auto-select-opt{
     margin: 2%;
     height: 100%;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, .5);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.auto-select-opt:hover{
+    cursor: pointer;
+}
+
+.auto-select-opt img{
+    width: 50%;
+    height: 50%;
+    object-fit: scale-down;
+}
+
+.auto-select-opt p{
+    margin: 3%;
+    font-family: "csgo";
+    font-size: 120%;
+    color: white;
 }
 
 .terrorist-opt{
     margin: 2%;
     height: 100%;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, .5);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.terrorist-opt:hover{
+    cursor: pointer;
+}
+
+.terrorist-opt img{
+    width: 50%;
+    height: 50%;
+    object-fit: scale-down;
+}
+
+.terrorist-opt p{
+    margin: 3%;
+    font-family: "csgo";
+    font-size: 120%;
+    color: white;
 }
 
 .select-btn-container{
