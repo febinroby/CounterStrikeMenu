@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "csgo";
-    src: url(/assets/fonts/cs_regular.ttf);
+    src: url('../assets/fonts/cs_regular.ttf');
 }
 
 body{
